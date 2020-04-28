@@ -4,24 +4,31 @@
 <head>
 	<title>Incremental Game</title>
 <meta charset="utf-8">
+
+<style>
+#buttonGroup button{
+	margin-bottom: 5px;
+}
+</style>
 </head>
 
 <body>
+	<script src="jquery-3.5.0.js"></script>
+	<script src="main.js"></script>
 	<h1> Incremental Game </h1>
-	<p id="buttons">
-		<button type="button" onclick="increment()">Gain a point</button>
-		<
-	</p1>
+	<div id="buttonGroup">
+		<div>
+			<button type="button" id="flower-button" class="purchase"> Pick a flower! </button>
+			<label for="flower-button"> You have <span id="flower-count">0</span> flowers! </label>
+		</div>
+		<div>
+			<button type="button" id="dwarf-button"> Trade some flowers for some rocks. </button>
+			<label for="dwarf-button"> You have <span id="rock-count">0 </span> rocks. The going rate right now is <span id="rock-rate">5</span> flowers for 1 rock. </label>
+		</div>
+		<div>
+			<button type="button" id="mice-button" class="purchase"> Hire a mouse to pick you some flowers! </button>
+			<label for="mice-button"> You have <span id="mice-count">0</span> mice picking flowers for you! </label>
+		</div>
+	</div>
 </body>
-
-<script src="jquery-3.5.0">
-var point_counter = 0;
-var point_label = document.createTextNode("You have " + point_counter + " points!"); 
-var buttons = document.getElementById("buttons");
-buttons.appendChild(point_label);
-function increment() {
-	point_counter += 1;
-	point_label.inner
-}
-</script>
 </html>

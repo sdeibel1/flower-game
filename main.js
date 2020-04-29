@@ -37,8 +37,8 @@ $(document).ready(function(){
 			$("label[for=mice-button]").show();	
 		}
 
-		
-	}
+
+	} 	
 
 	function miceWork() {
 		increment('flower-count', game_data['mice-count']);

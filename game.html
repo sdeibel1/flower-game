@@ -6,8 +6,24 @@
 <meta charset="utf-8">
 
 <style>
+
 #buttonGroup button{
 	margin-bottom: 5px;
+}
+
+#mainContainer {
+	border: 2px solid green;
+	border-radius: 25px;
+	position: absolute;
+	width: 30%;
+	top: 15%;
+	height: 60%;
+	left: 50%;
+	margin-left: -15%;
+}
+
+body {
+	background-color: BlanchedAlmond;
 }
 </style>
 </head>
@@ -16,6 +32,7 @@
 	<script src="jquery-3.5.0.js"></script>
 	<script src="main.js"></script>
 	<h1> Incremental Game </h1>
+	<div id="mainContainer">Hello</div>
 	<div id="buttonGroup">
 		<div>
 			<button type="button" id="flower-button" class="purchase"> Pick a flower! </button>
